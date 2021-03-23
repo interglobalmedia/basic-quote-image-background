@@ -195,6 +195,7 @@ a:hover {
 /* article quote-cloud styling desktop */
 
 .quote-cloud {
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -202,6 +203,10 @@ a:hover {
 	margin: 0.5rem;
 	text-align: center;
 	width: 90%;
+}
+
+.quote-cloud h2 {
+	font-weight: normal;
 }
 
 .quote-cloud blockquote {
