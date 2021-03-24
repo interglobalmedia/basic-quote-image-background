@@ -250,6 +250,7 @@ a:hover {
 /* Footer Styling */
 
 .site-credits {
+	letter-spacing: 0.07rem;
 	text-align: center;
 }
 
