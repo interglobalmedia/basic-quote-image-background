@@ -593,6 +593,8 @@ I **set** `CSS` in `JS` that is ***related specifically*** to the `background-im
 
 + [Generating random color with single line of js code: dev.to](https://dev.to/akhil_001/generating-random-color-with-single-line-of-js-code-fhj)
 
-+ [CSS background-image Property](https://www.w3schools.com/cssref/pr_background-image.asp)
++ [CSS background-image Property: w3schools](https://www.w3schools.com/cssref/pr_background-image.asp)
+
++ [Creating a Background Image with the Body Element: Maria D. Campbell](https://github.com/interglobalmedia/basic-quote-body-image-background/blob/master/basic-quote-body-image-background.md)
 
 </section>
