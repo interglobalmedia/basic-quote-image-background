@@ -1,5 +1,5 @@
 <h1 class="capitalize">COMD2451</h1>
-<h2 class="capitalize center">Creating a Basic Background Image Using CSS</h2>
+<h2 class="capitalize center">Creating a Basic Background Image Using CSS (and JS)</h2>
 
 ---
 
