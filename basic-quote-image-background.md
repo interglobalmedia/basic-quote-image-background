@@ -200,7 +200,8 @@ const images = [
 ***Each*** `file name` within a `template string` ***represents*** the `name` of an `image file` with the `.jpg` **extension**. ***All*** these images **reside** within a **folder** called `images` within the `root` of my `Portfolio Site` **folder**, but ***because*** I **have** to ***separately add*** the `folder name` to the `image name` ***in order*** to **be able** to **render it** in the **browser**, I ***also*** have to `declare` and `initialize` a **variable** to the **value** of the `name` of the `directory`:
 
 ```javascript
-const dir = `images/`
+/* absolute path represented by / before images/ */
+const dir = `/images/`
 ```
 
 ***After*** I `declare` and `initialize` the **variable** called `dir`, I ***have*** to `declare` and `initialize` a `const variable` I call `quoteContainer`, which ***allows*** me to **access** and **manipulate** the `section element` with the **class** of `.quote-container` in the **browser**. It **looks** like ***this***:
