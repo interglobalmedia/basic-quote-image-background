@@ -130,7 +130,7 @@ The **value** of the `min-height` is `100vh`, which ***means*** that the `min-he
 <section class="section">
 	<h2 class="sentence">The background-image property using JavaScript</h2>
 
-We ***don't*** have to always **set** a `background-image` to the `body element` of a **web page**. We can **set it** to ***another*** `element`. In the ***example below***, I **set it** to the `background` of a `section element` with the **class** of `.quote-container`. ***This time***, I **set** the `CSS styles` via `JavaScript`. The ***same*** can be **done** with ***plain*** `CSS`. **Set** with ***plain*** `CSS`, it would **look** like the ***following***:
+We ***don't*** have to always **set** a `background-image` to the `body element` of a **web page**. We can **set it** to ***another*** `element`. In the ***example below***, I **set it** to the `background` of a `article element` with the **class** of `.quote-cloud`. ***This time***, I **set** the `CSS styles` via `JavaScript`. The ***same*** can be **done** with ***plain*** `CSS`. **Set** with ***plain*** `CSS`, it would **look** like the ***following***:
 
 ```css
 .quote-cloud {
@@ -140,7 +140,7 @@ We ***don't*** have to always **set** a `background-image` to the `body element`
 
 The ***drawback*** is that I can ***only set*** one `background-image`. I can **set** a ***number*** of `background-images` just in case if ***any previous*** `images` are ***not available***, but **those** are ***only fallbacks***.
 
-***Using*** `JavaScript`, I can ***dynamically set*** multiple `background-images` with the ***click*** of the `section element` **containing** the **class** of `.quote-container`, ***dynamically changing*** the `background-image` ***each time*** I ***click*** on the `section element`.
+***Using*** `JavaScript`, I can ***dynamically set*** multiple `background-images` with the ***click*** of the `section element` **containing** the **class** of `.quote-container`, ***dynamically changing*** the `background-image` of the `article element` with the class of `.quote-cloud` ***each time*** I ***click*** on the `section element`.
 
 I can ***also set*** `CSS styles` via `JavaScript`. This is ***also known as*** `CSS` in `JS`.
 
@@ -169,9 +169,9 @@ The `quoteCloud` **variable** is `declared` and `initialized`. We ***declare*** 
 
 **Using** a `template string literal` ***formed*** with **back ticks** `(``)`, I **set** the `url` of the `background-image` to ***dynamically*** be `images/` + a `random image` ***taken from*** a `const variable` called `images` with the **value** of an `array` of `images`.
 
-What is an [array in JavaScript](https://www.w3schools.com/js/js_arrays.asp)? A `JavaScript array` is ***used*** to **store** `multiple values` in a ***single variable*** (`object`).
+What is an [array in JavaScript](https://www.w3schools.com/js/js_arrays.asp)? A `JavaScript array` is ***used*** to **store** `multiple values` in a ***single variable***.
 
-An `array` can ***hold*** many values **under** a **single name** (the ***name*** of the `variable/object`), and you can ***access*** the **values** by **referring** to an `index number`.
+An `array` can ***hold*** many values **under** a **single name** (the ***name*** of the `variable`), and you can ***access*** the **values** by **referring** to an `index number`.
 
 We can ***create*** an `array` **using** an `array literal`. That ***means*** `defining` the **value** of the `variable` with ***opening*** and ***closing*** `square brackets`:
 
@@ -247,9 +247,9 @@ quoteContainer.addEventListener('click', () => {
 
 The `const variable` called `articleHeading`, **representing** the `h2 element` inside the `article element` with the **class** of `.quote-cloud`, is ***accessed*** using the `document.querySelector()` **method** so it can be ***manipulated***.
 
-The `const variable` called `blockQuote`, ***representing*** the `blockquote element` inside the `article element` with the **class** of `.quote-cloud`, is ***accessed*** using the `document.querySelector()` **method** to it can be ***manipulated***.
+The `const variable` called `blockQuote`, ***representing*** the `blockquote element` inside the `article element` with the **class** of `.quote-cloud`, is ***accessed*** using the `document.querySelector()` **method** so it can be ***manipulated***.
 
-The `const variable` called `quoteCloud`, **representing** the `article element` with the **class** of `.quote-cloud`, is ***accessed*** using the `document.querySelector()` **method** to it can be ***manipulated***.
+The `const variable` called `quoteCloud`, **representing** the `article element` with the **class** of `.quote-cloud`, is ***accessed*** using the `document.querySelector()` **method** so it can be ***manipulated***.
 
 The `const variable` called `randomIndex`, **representing** the `random index` of a `const variable` called `quotes`, is **used** to ***access*** a `quote` from a `quotes array`, which is the `value` of a `const variable` called `quotes`.
 
@@ -274,7 +274,7 @@ The `Math.random()` **method** passed to the `Math.floor()` **method** `returns`
 Math.random() * quotes.length
 ```
 
-`quotes.length` **represents** the `"length"` of the `quotes array`. The `number` of `quotes` **inside** the `quotes array`, ***each*** surrounded by `template strings`. In our `quotes array`, we have `11` **quotes**.
+`quotes.length` **represents** the `"length"` of the `quotes array`. In other words, the `number` of `quotes` **inside** the `quotes array`, ***each*** contained in `template strings`. In our `quotes array`, we have `11` **quotes**.
 
 ```javascript
 const quotes = [
@@ -409,7 +409,7 @@ quoteCloud.style.height = `100%`
 
 ***Next***, I **set** the **JavaScript** `.style` **property** on the `quoteCloud variable` with the **class** of `"quote-cloud"` in the `HTML markup`, and **using** the ***camel-cased*** `maxHeight property` to **set** the ***maximum*** `height permissible` of the `article element` with the **class** of `.quote-cloud`.
 
-If I ***were using*** `CSS` to **set** the `max-height` of the `article element` with the **class** of `.auote-cloud`, I would ***have done*** the ***following*** in my `external stylesheet`:
+If I ***were using*** `CSS` to **set** the `max-height` of the `article element` with the **class** of `.quote-cloud`, I would ***have done*** the ***following*** in my `external stylesheet`:
 
 ```css
 .quote-cloud {
@@ -417,7 +417,7 @@ If I ***were using*** `CSS` to **set** the `max-height` of the `article element`
 }
 ```
 
-***Instead***, we are **setting** the **JavaScript** `.style` **property** on the `quoteCloud variable` with the **class** of `"quote-cloud"` in the `HTML markup`, and **using** the ***amel-cased*** `maxHeight property` to **set** the ***maximum*** `height permissible` for the `article element` with the **class** of `.quote-cloud`.
+***Instead***, we are **setting** the **JavaScript** `.style` **property** on the `quoteCloud variable` with the **class** of `"quote-cloud"` in the `HTML markup`, and **using** the ***camel-cased*** `maxHeight property` to **set** the ***maximum*** `height permissible` for the `article element` with the **class** of `.quote-cloud`.
 
 ```javascript
 quoteCloud.style.maxHeight = `600px`
@@ -467,9 +467,9 @@ When the `setBg` function expression is ***called***, `setBg()`, ***all*** the `
 
 ***Next***, I `declare` and `initialize` a `const variable` called `randomColor`. We **multiply** `Math.random()*16777215` because there are [16777216 possible RGB color variations](https://stackoverflow.com/questions/1484506/random-color-generator/25821830#25821830), and we want to ***potentially*** be able to **render** any one of ***them***. ***However***, we **can't use** the **number** `16777216`, because we **have** to `count` from `0`, ***similar*** to `counting` the `number` of `items` in an `array`. ***Instead***, we **use** `16777215`.
 
-I **set** the `.toString()` **method** on `Math.floor(Math.random()*16777215)`, ***passing it*** the **number** `16`, `.toString(16)`, because this ***creates*** a `hexadecimal value` for us. But we ***also*** have to **chain** the `ES6` (`Modern JavaScript` ***introduced*** in `2015`) `.padStart(6, '0')` **method** to ***ensure*** that the `hexadecimal value` ***always contains*** `6 characters`. The `6` **passed** to `.padStart()` **stands for** the `six places` for the `six characters`, and the `'0'` **stands for** the `value` ***used*** to **pad** the `hexadecimal value` to `6 characters`.
+I **set** the `.toString()` **method** on `Math.floor(Math.random()*16777215)`, ***passing it*** the **number** `16`, `.toString(16)`, because this ***creates*** a `hexadecimal value` for us. But we ***also*** have to **chain** the `ES6` (`Modern JavaScript` ***introduced*** in `2015`) `.padStart(6, '0')` **method** to ***ensure*** that the `hexadecimal value` ***always contains*** `6 characters`. The `6` **passed** to `.padStart()` **stands for** the `six places` for the `six characters`, and the `'0'` **stands for** the `value` ***used*** to **pad** the `hexadecimal value` to `6 characters`. The `.padStart(6, '0')` **method** simply ***ensures*** that a `hex color code` **containing** six characters is ***always generated***, because by ***default***, that is ***not*** always the case. It's just **one** of **those** `"JavaScript anomalies"`!
 
-***Next***, I **set** the J**avaScript** `.style property` on the `quoteCloud variable` with the **class** of `.quote-cloud`, using the `backgroundColor property` to **set** the ***fallback*** `background-color` of the `article element` with the **class** of `.quote-cloud`. I **use** a `#` ***followed by*** `template interpolation` of the `randomColor variable` to ***dynamically set*** a `hexadecimal color code` as the **value** of the `backgroundColor property`.
+***Next***, I **set** the **JavaScript** `.style property` on the `quoteCloud variable` with the **class** of `.quote-cloud`, using the `backgroundColor property` to **set** the ***fallback*** `background-color` of the `article element` with the **class** of `.quote-cloud`. I **use** a `#` ***followed by*** `template interpolation` of the `randomColor variable` to ***dynamically set*** a `hexadecimal color code` as the **value** of the `backgroundColor property`.
 
 I ***do*** the ***same*** when ***dynamically setting*** the `backgroundColor` of the `body element` via the `const variable` called `body`.
 
@@ -552,10 +552,9 @@ I **set** `CSS` in `JS` that is ***related specifically*** to the `background-im
 
 /* font-size specific max-width: 640px and max-height: 360px (Microsoft Lumia 550) */
 
-@media (max-width: 640px) and (max-height: 360px) {
-
-    h2, blockquote {
-        font-size: 1.3rem;
+@media (width: 640px) and (height: 360px) {
+	h1 {
+		margin-top: 0;
 	}
 }
 
